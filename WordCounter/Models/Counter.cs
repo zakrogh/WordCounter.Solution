@@ -13,7 +13,7 @@ namespace WordCounter.Models
     public int CountWords()
     {
       int count = 0;
-      string[] sentArr = sentence.Split(" ", StringSplitOptions.None);
+      string[] sentArr = Sentence.Split(" ", StringSplitOptions.None);
       for(int i = 0; i < sentArr.Length; i++)
       {
         if(sentArr[i] == Word)
